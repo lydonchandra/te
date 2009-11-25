@@ -81,7 +81,7 @@ public class StockServlet extends HttpServlet {
 				Query query = pm.newQuery("SELECT FROM " + Portofolio.class.getName() + " WHERE id == " + req.getParameter("id") );
 				List<Portofolio> objs = (List<Portofolio>)query.execute();
 				Portofolio portof = objs.get(0);
-				req.getSession().setAttribute("id", req.getParameter("id"));
+				req.getSession().setAttribute("id", req.getParameter("id")); // adding comment
 				
 				req.getSession().setAttribute("debug", "sdddaaaa");
 				
