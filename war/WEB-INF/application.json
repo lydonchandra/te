@@ -1,0 +1,37 @@
+{
+  "openIdInterceptor":
+  {
+    "class": "com.dyuproject.demos.showcase.OpenIdInterceptor",
+  },
+  "webContext":
+  {
+    "class": "com.dyuproject.web.rest.service.RESTServiceContext",
+    "attributes":
+    {
+      "foo": "bar",
+      "openIdInterceptor": $openIdInterceptor
+    },
+    "interceptors":
+    {
+      "/openid/**": $openIdInterceptor
+    },
+    "services":
+    [
+      {
+        "class": "com.dyuproject.demos.showcase.MainService"
+      },
+      {
+        "class": "com.dyuproject.demos.showcase.OpenIdService"
+      },
+      {
+        "class": "com.dyuproject.demos.showcase.OAuthGoogleService"
+      },
+      {
+        "class": "com.dyuproject.demos.showcase.OAuthYahooService"
+      },
+      {
+        "class": "com.dyuproject.demos.showcase.HybridGoogleService"
+      }
+    ]
+  }
+}

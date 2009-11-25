@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/testest/war/WEB-INF/lib/dyuproject-ioc-1.1.6.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/testest/war/WEB-INF/lib/dyuproject-json-1.1.6.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/testest/war/WEB-INF/lib/dyuproject-openid-oauth-1.1.6-jarjar.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/testest/war/WEB-INF/lib/dyuproject-util-1.1.6.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/testest/war/WEB-INF/lib/dyuproject-velocity-1.1.6.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/testest/war/WEB-INF/lib/dyuproject-web-1.1.6.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/testest/war/WEB-INF/lib/jetty-util-6.1.19.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/testest/war/WEB-INF/lib/slf4j-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/testest/war/WEB-INF/lib/slf4j-simple-1.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/dontestjava2/war/WEB-INF/lib/jra-1.0-alpha-4.jar"/>
+	<classpathentry kind="lib" path="D:/data/eclipse-php/dontestjava2/war/WEB-INF/lib/commons-lang-2.1.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

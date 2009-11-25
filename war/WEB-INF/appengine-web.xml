@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <application>dontestjava</application>
+  <version>1</version>
+
+  <system-properties>
+    <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+  </system-properties>
+  
+  <!--<env-variables>
+    <env-var name="DEFAULT_ENCODING" value="UTF-8" />
+  </env-variables>-->
+  
+  <resource-files>
+    <include path="/**.xml" />
+    <include path="/**.properties" />
+  </resource-files>
+
+  <static-files>
+    <include path="/**.html"/>
+    <include path="/**.css"/>
+    <include path="/**.js"/>
+    <include path="/**.gif"/>
+    <include path="/**.ico"/>
+    <include path="/**.txt"/>
+  </static-files>
+
+  <sessions-enabled>true</sessions-enabled>
+</appengine-web-app>

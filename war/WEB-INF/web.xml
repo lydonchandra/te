@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app 
+   xmlns="http://java.sun.com/xml/ns/javaee" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+   version="2.5" metadata-complete="true">
+   
+  <listener>
+    <listener-class>com.dyuproject.web.rest.ApplicationServletContextListener</listener-class>
+  </listener>
+
+  <servlet>
+    <servlet-name>rest</servlet-name>
+    <servlet-class>com.dyuproject.web.rest.RESTServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>stock</servlet-name>
+    <servlet-class>com.hoskoo.porto.StockServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>teststock</servlet-name>
+    <servlet-class>com.hoskoo.porto.TestStockServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>image</servlet-name>
+    <servlet-class>com.hoskoo.porto.ImageServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>rest</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet-mapping>
+    <servlet-name>stock</servlet-name>
+    <url-pattern>/stock</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet-mapping>
+    <servlet-name>teststock</servlet-name>
+    <url-pattern>/teststock</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>image</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+        <welcome-file>test.jsp</welcome-file>
+    </welcome-file-list>
+  
+    
+</web-app>
